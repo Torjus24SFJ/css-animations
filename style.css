@@ -1,16 +1,22 @@
-div {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* div {
     width: 100px;
     height: 100px;
     background-color: red;
-    /* animation-name: changebg;
+    animation-name: changebg;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
     animation-timing-function: linear; */
-    animation: changebg 3s linear 1s infinite; /*! shorthand term */
-}
+    /*animation: changebg 3s linear 1s infinite;*/ /*! shorthand term */
+/* } */
 
-@keyframes changebg {
+/* @keyframes changebg {
     0% {
         background-color: red;
     }
@@ -26,4 +32,161 @@ div {
     100% {
         background-color: rgb(66, 0, 0);
     }
+} */
+
+
+/*! Headache inducing animation */
+
+/* div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+h1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    animation: flashtext 0.1s linear infinite;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 4rem;
+}
+
+@keyframes flashtext {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+        color: black;
+    }
+} */
+
+/*! Text shadow animation */
+
+/* body, html {
+    display: grid;
+    height: 100%;
+    background-color: rgb(250, 174, 74);
+}
+
+.shadow {
+    margin: auto;
+    color: blue;
+    letter-spacing: 30px;
+    animation: infinite 5s multiani;
+}
+
+@keyframes multiani {
+    50% {
+        color: red;
+        text-shadow: red 25px 20px 5px;
+        letter-spacing: -1px;
+    }
+} */
+
+/*! Glowing sun animation */
+
+/* body {
+    background-color: powderblue;
+}
+
+.sun {
+    margin: 6rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: rgb(233, 233, 85);
+    box-shadow: 0px 0px 40px 10px yellow;
+    animation: infinite 1s sunglow;
+    animation-direction: alternate;
+}
+
+@keyframes sunglow {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+} */
+
+/*! Bouncing ball */
+
+/* .ball {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    
+} */
+
+/*! Card flip */
+
+/* body {
+    display: flex;
+    margin: 4rem;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    transition: backgrond-color 0.8s ease;
+}
+
+.front {
+    background-color: #3498db;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.back {
+    background-color: #e74c3c;
+    border: 2px solid #3498db;
+    color: #3498db;
+    transform: rotateY(180deg);
+}
+ */
